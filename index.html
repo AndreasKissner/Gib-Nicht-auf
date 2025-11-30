@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Don't Quit Coding</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="music.css">
 </head>
 <body>
-  <div class="hero">
+
+  <header class="hero">
     <h1 class="title">Gib nicht auf, Coder!</h1>
     <p class="subtitle">Du musst nicht der Beste sein – du brauchst nur Ideen und Mut.</p>
 
@@ -15,11 +17,22 @@
 
     <div id="messageBox"></div>
 
- 
     <a href="./musik.html" class="music-link">
-      🎧 Meine Musik (free!)
+      🎧 Meht Coder Musik (free!)
     </a>
-  </div>
+
+    <section class="song-card">
+      <h2>Gib Nicht Auf</h2>
+      <p>Motivation für Coder.</p>
+
+      <audio controls class="player">
+        <source src="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/Gib-nicht-auf.mp3" type="audio/mpeg">
+      </audio>
+
+      <a href="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/Gib-nicht-auf.mp3" download class="btn">⬇ Download</a>
+    </section>
+
+  </header>
 
   <script src="script.js"></script>
 </body>

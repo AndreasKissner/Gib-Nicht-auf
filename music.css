@@ -2,23 +2,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #10131f, #191d2c, #111827);
-  color: white;
+  background: linear-gradient(135deg, #eef2f7, #dde3eb, #ccd3df);
+  color: #1f2937;
   text-align: center;
 }
 
+/* Titel */
 .title {
   margin-top: 40px;
   font-size: 2.8rem;
-  font-weight: 800;
+  font-weight: 900;
+  color: #1b2430;
 }
 
 .sub {
   margin-top: -10px;
   opacity: 0.8;
   font-size: 1.2rem;
+  color: #4b5563;
 }
 
+/* Karten-Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -28,36 +32,102 @@ body {
   margin: auto;
 }
 
+/* SONG CARD */
 .song-card {
-  background: #1f2337;
+  background: #ffffff;
   padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.35);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
   transition: 0.3s;
 }
 
 .song-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(100,100,255,0.4);
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px rgba(0, 108, 185, 0.25);
 }
 
 .song-card h2 {
   margin-top: 0;
   font-size: 1.6rem;
+  color: #1f2937;
 }
 
+/* BUTTON – sportlich & clean */
 .btn {
   display: inline-block;
   margin-top: 15px;
   padding: 12px 20px;
-  background: #4f46e5;
+  background: #008cff;
   border-radius: 10px;
   color: white;
   text-decoration: none;
   font-weight: 700;
   transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,140,255,0.35);
 }
 
 .btn:hover {
-  background: #6366f1;
+  background: #0aa2ff;
+  box-shadow: 0 6px 18px rgba(0,140,255,0.5);
+}
+
+/* PLAYER */
+.player {
+  width: 100%;
+  max-width: 230px;     
+  margin: 15px auto;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(0, 108, 185, 0.3));
+  border-radius: 12px;   
+}
+
+/* Heller sportlicher Player-Stil */
+.player::-webkit-media-controls-panel {
+  background: #f2f4f7 !important;  
+  border-radius: 12px;
+}
+
+.player::-webkit-media-controls-play-button {
+  filter: invert(0);
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+.player::-webkit-media-controls-play-button:hover {
+  opacity: 1;
+}
+
+.player::-webkit-media-controls-timeline {
+  background: #e1e5ea;
+  border-radius: 3px;
+}
+
+.player::-webkit-media-controls-current-time-display,
+.player::-webkit-media-controls-time-remaining-display {
+  color: #008cff;
+}
+
+.player::-webkit-media-controls-volume-slider {
+  background-color: #e5e7eb;
+  border-radius: 5px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 22px;
+  background: #7c3aed; 
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3);
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #d9a60d;
+  box-shadow: 0 0 18px rgba(217, 166, 13, 0.5);
 }

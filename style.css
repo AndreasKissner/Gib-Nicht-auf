@@ -1,25 +1,28 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0c0f1a, #1b1f36, #111827);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  background: linear-gradient(135deg, #e78b12, #afc411, #e00909);
+  color: #f3f4f6;
+  text-align: center;
+  
+  /* FIX: Flex raus, damit die Seite nicht zerquetscht */
+  min-height: 100vh;
 }
 
+/* Hero-Bereich extra zentrieren */
 .hero {
   text-align: center;
   max-width: 600px;
   padding: 20px;
+  margin: 80px auto;     /* FIX: genug Platz & nicht gequetscht */
 }
 
 .title {
   font-size: 3rem;
   letter-spacing: 2px;
   font-weight: 800;
+  color: #e0e7ff;
   animation: fadeIn 1.5s ease-out;
 }
 
@@ -27,22 +30,25 @@ body {
   margin-top: -10px;
   font-size: 1.2rem;
   opacity: 0.8;
+  color: #10132b;
 }
 
 button {
   margin-top: 30px;
   padding: 15px 25px;
-  background: #4f46e5;
+  background: #7c3aed;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
 }
 
 button:hover {
-  background: #6366f1;
+  background: #d9a60d;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.45);
 }
 
 .pulse {
@@ -62,19 +68,22 @@ button:hover {
   min-height: 40px;
   opacity: 0;
   transition: opacity 0.6s ease;
+  color: #042260;
 }
 
 .music-link {
   display: inline-block;
   margin-top: 35px;
   font-size: 1.2rem;
-  color: #a5b4fc;
+  color: #1d90ce;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
+  margin-bottom: 40px;
 }
 
 .music-link:hover {
-  color: #c7d2fe;
+  color: #c4b5fd;
+  text-shadow: 0 0 10px rgba(196, 181, 253, 0.4);
 }
 
 @keyframes fadeIn {

@@ -1,49 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andreas – Musik Downloads</title>
-  <link rel="stylesheet" href="music.css">
+  <link rel="stylesheet" href="music.css" />
 </head>
 <body>
 
-  <h1 class="title">🎶 Gratis Musik von Andreas</h1>
-  <p class="sub">Lade meine Tracks kostenlos herunter – viel Spaß!</p>
+  <header>
+    <h1 class="title">🎶 Gratis Musik von Andreas</h1>
+    <p class="sub">Lade meine Tracks kostenlos herunter – oder hör sie direkt hier an!</p>
+  </header>
 
-  <div class="grid">
+  <a href="./index.html" class="back-btn">⬅ Zurück zur Startseite</a>
 
-    <div class="song-card">
-      <h2>Track 01</h2>
-      <p>Kurzbeschreibung oder Vibe.</p>
-      <a href="ID3" download class="btn">⬇ Download</a>
-    </div>
 
-    <div class="song-card">
-      <h2>Track 02</h2>
-      <p>Platzhalter für deinen Song.</p>
-      <a href="DEIN-LINK-ZU-MP3" download class="btn">⬇ Download</a>
-    </div>
+  <main>
+    <section class="grid">
 
-    <div class="song-card">
-      <h2>Track 03</h2>
-      <p>Mehr Musik folgt…</p>
-      <a href="DEIN-LINK-ZU-MP3" download class="btn">⬇ Download</a>
-    </div>
+      <article class="song-card">
+        <h2>Css Make It Right</h2>
+        <p>Moderner Coding-Vibe.</p>
+        <audio controls class="player">
+          <source src="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/Css_make_it_Right.mp3" type="audio/mpeg">
+        </audio>
+        <a href="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/Css_make_it_Right.mp3" download class="btn">⬇ Download</a>
+      </article>
 
-    <div class="song-card">
-      <h2>Track 04</h2>
-      <p>Hip-Hop, Chill, Vibes.</p>
-      <a href="DEIN-LINK-ZU-MP3" download class="btn">⬇ Download</a>
-    </div>
+      <article class="song-card">
+        <h2>Gib Nicht Auf</h2>
+        <p>Motivation für Coder.</p>
+        <audio controls class="player">
+          <source src="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/Gib-nicht-auf.mp3" type="audio/mpeg">
+        </audio>
+        <a href="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/Gib-nicht-auf.mp3" download class="btn">⬇ Download</a>
+      </article>
 
-    <div class="song-card">
-      <h2>Track 05</h2>
-      <p>Dein Style, dein Sound.</p>
-      <a href="DEIN-LINK-ZU-MP3" download class="btn">⬇ Download</a>
-    </div>
+      <article class="song-card">
+        <h2>HTML Hip Hop</h2>
+        <p>Der Hip-Hop Beat für Webentwickler.</p>
+        <audio controls class="player">
+          <source src="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/HTML_HIP_HOP.mp3" type="audio/mpeg">
+        </audio>
+        <a href="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/HTML_HIP_HOP.mp3" download class="btn">⬇ Download</a>
+      </article>
 
-  </div>
+      <article class="song-card">
+        <h2>HTML The Beginn</h2>
+        <p>Der Start in die Welt von HTML.</p>
+        <audio controls class="player">
+          <source src="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/HTML_The_Beginn.mp3" type="audio/mpeg">
+        </audio>
+        <a href="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/HTML_The_Beginn.mp3" download class="btn">⬇ Download</a>
+      </article>
+
+      <article class="song-card">
+        <h2>Javascript Jump</h2>
+        <p>Springe durch den Code.</p>
+        <audio controls class="player">
+          <source src="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/Javascript_Jump.mp3" type="audio/mpeg">
+        </audio>
+        <a href="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/Javascript_Jump.mp3" download class="btn">⬇ Download</a>
+      </article>
+
+      <article class="song-card">
+        <h2>Javascript The God of Code</h2>
+        <p>Der epische JavaScript-Sound.</p>
+        <audio controls class="player">
+          <source src="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/JAVASCRIPT_the_God_of_Code.mp3" type="audio/mpeg">
+        </audio>
+        <a href="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/JAVASCRIPT_the_God_of_Code.mp3" download class="btn">⬇ Download</a>
+      </article>
+
+      <article class="song-card">
+        <h2>The Power of Angular</h2>
+        <p>Kraftvoller Framework-Beat.</p>
+        <audio controls class="player">
+          <source src="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/The_Power_of_Angular.mp3" type="audio/mpeg">
+        </audio>
+        <a href="https://raw.githubusercontent.com/AndreasKissner/Gib-Nicht-auf/main/assets/vids/The_Power_of_Angular.mp3" download class="btn">⬇ Download</a>
+      </article>
+
+    </section>
+  </main>
 
 </body>
 </html>
